@@ -3,11 +3,7 @@ name: SonarQube Analysis
 on:
   push:
     branches:
-<<<<<<< HEAD
-      - main
-=======
-      - master
->>>>>>> 99631c0d15e6413ce4330d9d4e182527d40b211b
+      - master 
 
 jobs:
   sonarqube:
@@ -32,8 +28,4 @@ jobs:
             -Dsonar.projectKey=Tp_sonar \
             -Dsonar.sources=. \
             -Dsonar.host.url=http://localhost:9000 \
-<<<<<<< HEAD
             -Dsonar.login=$SONAR_TOKEN
-=======
-            -Dsonar.login=$SONAR_TOKEN
->>>>>>> 99631c0d15e6413ce4330d9d4e182527d40b211b
